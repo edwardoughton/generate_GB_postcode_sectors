@@ -45,7 +45,7 @@ def convert_to_correct_encoding(data_directory, field_name_target):
         inLayerDefn = inLayer.GetLayerDefn()
         for i in range(0, inLayerDefn.GetFieldCount()):
             fieldDefn = inLayerDefn.GetFieldDefn(i)
-            fieldName = fieldDefn.GetName()
+            # fieldName = fieldDefn.GetName()
             outLayer.CreateField(fieldDefn)
 
         # Get the output Layer's Feature Definition
